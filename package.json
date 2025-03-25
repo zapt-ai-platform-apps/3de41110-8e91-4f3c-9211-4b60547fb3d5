@@ -1,25 +1,44 @@
 {
-    "name": "reactjs-vite-tailwind-vercel",
+    "name": "reflections-and-intentions",
     "version": "1.0.0",
-    "description": "ReactJS app with Vite, Tailwind",
+    "description": "A daily journaling app for reflections and intentions",
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "vitest run && vite build",
         "serve": "vite preview",
-        "start": "vite --host"
+        "start": "vite --host",
+        "test": "vitest"
     },
     "dependencies": {
         "@sentry/browser": "^8.41.0",
+        "@sentry/node": "^8.54.0",
+        "@supabase/auth-ui-react": "^0.4.7",
+        "@supabase/auth-ui-shared": "^0.1.8",
+        "@zapt/zapt-js": "^1.0.21",
+        "date-fns": "^2.30.0",
+        "drizzle-orm": "^0.33.0",
+        "postgres": "^3.4.5",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-datepicker": "^4.24.0",
+        "react-dom": "^18.2.0",
+        "react-hot-toast": "^2.4.1",
+        "react-icons": "^4.12.0",
+        "react-router-dom": "^6.20.0",
+        "react-time-picker": "^6.5.2",
+        "zod": "^3.22.4"
     },
     "devDependencies": {
+        "@testing-library/jest-dom": "^6.1.5",
+        "@testing-library/react": "^14.1.2",
+        "@testing-library/user-event": "^14.5.1",
         "@vitejs/plugin-react": "^4.3.4",
+        "@sentry/vite-plugin": "^2.23.0",
         "autoprefixer": "^10.4.20",
+        "jsdom": "^23.0.1",
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.4.7",
-        "@sentry/vite-plugin": "^2.23.0"
+        "vitest": "^1.0.1"
     }
 }
